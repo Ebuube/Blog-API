@@ -151,3 +151,10 @@ REST_FRAMEWORK = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SITE_ID = 1
+
+
+# SWAGGER SETTINGS
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
+}
