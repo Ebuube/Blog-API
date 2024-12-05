@@ -142,6 +142,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',  # for browsable API
         'rest_framework.authentication.TokenAuthentication',    # for non-browsable API requests
     ],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
 
 

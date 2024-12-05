@@ -10,7 +10,7 @@ from .serializers import PostSerializer, UserSerializer
 class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthOrReadOnly,)
     queryset = Post.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = PostSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
